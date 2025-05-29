@@ -32,7 +32,7 @@ const Contact = () => {
   try {
     const { name, email, phone, message } = formData;
 
-    const res = await fetch('http://localhost:5000/api/contact', {
+    const res = await fetch('https://backend-ecis.onrender.com/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, phone, message }),
