@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Calendar, Clock, User, Phone, Mail, MessageSquare, CheckCircle } from 'lucide-react';
-import Navigation from '@/components/Navigation';
+import Navigation from '@/components/Navigation';b
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -53,7 +53,7 @@ const Booking = () => {
   setIsSubmitting(true);
 
   try {
-    const response = await fetch('http://localhost:5000/api/booking', {
+    const response = await fetch('https://backend-ecis.onrender.com/api/booking', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
